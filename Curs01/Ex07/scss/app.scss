@@ -1,0 +1,14 @@
+@mixin mq-sm-down {
+  @media (max-width: 500px) {
+    @content;
+    //  .box2 {
+    //    display: none;
+    //    }
+  }
+}
+
+.box-2 {
+  @include mq-sm-down() {
+    display: none;
+  }
+}
