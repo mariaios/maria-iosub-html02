@@ -42,12 +42,49 @@ body > h3 {
   .box-2 {
     display: none;
   }
+
+  .box-1 {
+    display: none;
+  }
+
+  body {
+    padding: 15px;
+  }
 }
 
 @media (max-width: 768px) {
+  .box-5 {
+    color: white;
+  }
+
+  .box-3 {
+    border-color: green;
+  }
 }
 
 @media (max-width: 992px) {
+  .box-4 {
+    display: none;
+  }
+
+  .box-2 {
+    border-color: yellow;
+    color: white;
+  }
+}
+
+@media (min-width: 992px) {
+  .box-4 {
+    color: red;
+  }
+
+  .box-1 {
+    display: none;
+  }
+
+  .box-3 {
+    display: none;
+  }
 }
 
 @media (min-width: 576px) {
@@ -57,7 +94,11 @@ body > h3 {
 }
 
 @media (min-width: 1200px) {
-  h3 {
+  .box-5 {
+    display: none;
+  }
+
+  body > h3 {
     display: none;
   }
 }
@@ -67,3 +108,16 @@ body > h3 {
     display: block;
   }
 }
+
+@media (min-width: 1000px) {
+  body > h3 {
+    color: red;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 500px) {
+  body > h2 {
+    display: block;
+  }
+}
+/* si aici pare a fi bug, imi cere body > h2 desi este */
