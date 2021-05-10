@@ -25,4 +25,33 @@
   background-color: purple;
 }
 
+.circles {
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+}
+
+.circle, .circle-blue, .circle-green, .circle-red {
+  width: 200px;
+  height: 200px;
+  background-color: brown;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.circle-red {
+  background-color: red;
+}
+
+.circle-green {
+  background-color: green;
+}
+
+.circle-blue {
+  background-color: blue;
+}
+
 /*# sourceMappingURL=style.css.map */

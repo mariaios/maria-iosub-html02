@@ -9,3 +9,26 @@
   height: 150px;
   border: 1px solid #000;
 }
+
+@for $i from 1 to 10 {
+  .box-0#{$i} {
+    border-width: #{$i}px;
+  }
+}
+
+@for $i from 1 through 9 {
+  @if $i % 2 == 0 {
+    .box-#{$i} {
+      background-color: grey;
+    }
+  }
+}
+
+@for $i from 1 through 9 {
+  @if $i % 2 != 0 {
+    .box-#{$i} {
+      border: 3px dotted red;
+    }
+  }
+}
+// nu se face verde, am incercat si cu @else dar a dat eroare

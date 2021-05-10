@@ -17,3 +17,15 @@ $colors: (
     color: $color;
   }
 }
+
+@each $type, $color in $colors {
+  .btn-bg-#{$type} {
+    background-color: $color;
+  }
+}
+
+@each $type, $color in $colors {
+  .text-#{$type} {
+    color: $color;
+  }
+}

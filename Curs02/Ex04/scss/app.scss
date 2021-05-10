@@ -18,8 +18,18 @@
 
 @for $i from 1 through 5 {
   @if $i % 2 !=0 {
+    // % modulo iti arata restul de la impartire
     .box-#{$i}0 {
       background-color: gray;
     }
   }
 }
+
+@for $i from 1 to 6 {
+  .box-0#{$i} {
+    width: (145px + $i * 5);
+    height: (145px + $i * 5);
+  }
+}
+// aici din cate vad cere .box-01 samd, dar verifica .box-1 samd
+// asa ca nu e verde desi corespund valorile si apare ok :).
