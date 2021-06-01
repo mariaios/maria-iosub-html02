@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Baskerville Old Face';
+    src: url('BaskOldFace.woff2') format('woff2'),
+        url('BaskOldFace.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
