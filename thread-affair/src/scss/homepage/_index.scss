@@ -16,35 +16,56 @@
         color: $brand-primary;
         font-weight: 300;
         text-transform: capitalize;
+        font-size: 35px;
+
+        @include media-breakpoint-up('md') {
+          font-size: 30px;
+          color: $black;
+        }
 
         span {
           font-weight: 400;
         }
       }
     }
+  }
 
-    section {
-      margin-bottom: 70px;
+  section {
+    margin-bottom: 70px;
+  }
+
+  .catalog-preview {
+    & > footer {
+      display: none;
     }
 
-    .catalog-preview {
-      & > footer {
+    &:nth-of-type(2) {
+      & > header {
         display: none;
-      }
 
-      &:nth-of-type(2) {
-        & > header {
-          display: none;
-        }
-
-        .product-tile {
-          &:first-child {
-            display: block;
-          }
-
-          display: none;
+        @include media-breakpoint-up('md') {
+          display: block;
         }
       }
+
+      .product-tile {
+        &:first-child {
+          display: block;
+        }
+
+        display: none;
+
+        @include media-breakpoint-up('md') {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .product-tiles {
+    @include media-breakpoint-up('md') {
+      display: flex;
+      justify-content: space-between;
     }
   }
 }
