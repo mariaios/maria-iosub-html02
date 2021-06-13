@@ -11,46 +11,42 @@
 </head>
 
 <body class="homepage">
-  <header class="header container">
+  <header class="header">
     <%= require('html-loader!./html/header.html')%>
   </header>
 
   <main class="main">
-    <header class="banner-main">
+    <header class="banner-main d-md-none">
       <%= require('html-loader!./html/homepage/banner-main.html')%>
     </header>
 
     <main class="content-main">
-      <section class="catalog-preview container d-md-none">
+      <section class="catalog-preview container">
         <%= require('html-loader!./html/homepage/catalog-preview-01.html')%>
       </section>
 
-      <section class="catalog-preview container d-md-none">
+      <section class="catalog-preview container">
         <%= require('html-loader!./html/homepage/catalog-preview-02.html')%>
       </section>
 
-      <section class="catalog-preview container d-none d-md-block">
+      <section class="home-marketing container">
+        <%= require('html-loader!./html/homepage/home-marketing.html')%>
+      </section>
+      <section class="catalog-preview container">
         <%= require('html-loader!./html/homepage/catalog-preview-03.html')%>
       </section>
 
-      <section class="catalog-preview container d-none d-md-block">
+      <section class="catalog-preview container">
         <%= require('html-loader!./html/homepage/catalog-preview-04.html')%>
       </section>
 
-      <%= require('html-loader!./html/homepage/home-marketing.html')%>
-
-      <section class="catalog-preview container">
-        <%= require('html-loader!./html/homepage/catalog-preview-05.html')%>
-      </section>
-
-      <section class="catalog-preview container">
-        <%= require('html-loader!./html/homepage/catalog-preview-06.html')%>
-      </section>
     </main>
   </main>
 
   <footer class="footer">
-    <%= require('html-loader!./html/footer.html')%>
+    <div class="footer-container container-md">
+      <%= require('html-loader!./html/footer.html')%>
+    </div>
   </footer>
 </body>
 

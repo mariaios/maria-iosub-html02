@@ -24,3 +24,11 @@ body {
   font-weight: bold;
   color: $brand-primary;
 }
+
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@import './shared/homepage/index';
+@import './homepage/index.scss';

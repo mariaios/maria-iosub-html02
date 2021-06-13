@@ -1,0 +1,47 @@
+.home-marketing {
+  margin-top: 32px;
+
+  @include media-breakpoint-up(md) {
+    margin-top: 72px;
+    margin-bottom: 72px;
+    // aici pusesem shorthand-ul 72px 0 si am suprascris containerul de bootestrap
+    // mi-a luat ceva sa imi dau seama de ce nu mai merge :))
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+      margin-bottom: 40px;
+    }
+  }
+
+  picture {
+    display: flex;
+    justify-content: center;
+
+    img {
+      margin-bottom: 26px;
+      width: 100%;
+
+      @include media-breakpoint-up(md) {
+        width: 666px;
+        height: 666px;
+        margin-right: 140px;
+      }
+    }
+  }
+
+  p {
+    font-family: 'Roboto';
+    font-weight: 300;
+
+    @include media-breakpoint-up(md) {
+      font-size: 22px;
+      text-align: justify;
+
+      &:first-of-type {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

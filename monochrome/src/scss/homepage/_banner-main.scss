@@ -1,0 +1,24 @@
+.banner-main {
+  background: url(../images/banners/man-banner.png) no-repeat center center;
+  background-size: cover;
+  min-height: 200px;
+
+  div {
+    min-height: 200px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    a {
+      color: $brand-primary;
+      font-family: 'Roboto';
+      font-size: 14px;
+      text-align: center;
+      text-decoration: none;
+      padding: 3px 13px;
+      margin-bottom: 20px;
+      background-color: $brand-secondary;
+      border: 1px solid $brand-primary;
+    }
+  }
+}

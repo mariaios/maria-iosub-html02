@@ -1,0 +1,184 @@
+.header {
+  padding-top: 30px;
+
+  @include media-breakpoint-up(md) {
+    padding: 0;
+    background: url(../images/banners/banner.png) no-repeat center center;
+    background-size: cover;
+  }
+
+  .header-primary {
+    @include media-breakpoint-up(md) {
+      padding-top: 30px;
+      display: flex;
+      justify-content: center;
+      height: 500px;
+    }
+  }
+
+  .header-social {
+    display: none;
+
+    @include media-breakpoint-up(md) {
+      display: inline-flex;
+      order: 1;
+
+      li {
+        display: inline-flex;
+        margin-right: 35px;
+
+        a {
+          font-size: 18px;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .header-contact {
+    display: none;
+
+    @include media-breakpoint-up(md) {
+      display: inline-flex;
+      font-weight: normal;
+      order: 2;
+      margin-right: 246px;
+
+      a {
+        color: $white;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .header-controls {
+    display: flex;
+    justify-content: space-between;
+
+    @include media-breakpoint-up(md) {
+      display: inline-flex;
+      order: 4;
+    }
+
+    ul {
+      margin-right: 18px;
+      @include media-breakpoint-up(md) {
+        margin-right: 0;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: $black;
+      font-size: 22px;
+      margin: 0 8px 16px 8px;
+
+      @include media-breakpoint-up(md) {
+        font-size: 18px;
+        margin: 0 16px 0px 16px;
+
+        &:nth-of-type(3) {
+          margin-right: 0;
+        }
+      }
+    }
+
+    > a {
+      margin: 0 0 16px 18px;
+      text-transform: uppercase;
+      font-weight: 300;
+
+      @include media-breakpoint-up(md) {
+        display: none;
+      }
+      // am lasat fontul playfair ca voia alt font pt textu asta si sa nu mai descarc un font pt un singur scris
+    }
+  }
+
+  .header-form {
+    background-color: $brand-primary;
+    padding: 10px 0;
+
+    @include media-breakpoint-up(md) {
+      display: inline-flex;
+      order: 3;
+      background-color: transparent;
+      margin-right: 41px;
+      padding: 0;
+    }
+
+    form {
+      display: flex;
+      justify-content: space-between;
+
+      .menu-activator {
+        display: flex;
+        text-decoration: none;
+        color: $white;
+        font-size: 30px;
+
+        @include media-breakpoint-up(md) {
+          display: none;
+        }
+      }
+
+      .header-form-container {
+        display: flex;
+        border: 1px solid $brand-tertiary;
+        height: 30px;
+        justify-content: space-between;
+        position: relative;
+      }
+
+      input {
+        display: flex;
+        background-color: transparent;
+        border: 0;
+
+        &:focus {
+          outline-width: 0;
+        }
+      }
+
+      button {
+        display: flex;
+        background-color: transparent;
+        border: 0px;
+        color: $brand-tertiary;
+        position: relative;
+        top: 4px;
+
+        @include media-breakpoint-up(md) {
+          color: $brand-primary;
+        }
+      }
+    }
+  }
+
+  .header-secondary {
+    display: none;
+
+    @include media-breakpoint-up(md) {
+      display: block;
+      background-color: $brand-primary;
+
+      .header-nav {
+        ul {
+          display: flex;
+          justify-content: space-between;
+          padding-top: 15px;
+          padding-bottom: 11px;
+
+          a {
+            text-decoration: none;
+            color: $brand-secondary;
+            font-weight: normal;
+            font-size: 19px;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+}

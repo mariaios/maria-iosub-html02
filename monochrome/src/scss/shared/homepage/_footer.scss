@@ -1,0 +1,213 @@
+.footer {
+  background: $brand-secondary;
+  text-align: center;
+
+  @include media-breakpoint-up(md) {
+    margin-top: 80px;
+  }
+
+  .footer-container {
+    @include media-breakpoint-up(md) {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
+
+.footer-connect {
+  margin-top: 60px;
+
+  @include media-breakpoint-up(md) {
+    padding-bottom: 35px;
+  }
+
+  .footer-newsletter {
+    padding-top: 40px;
+
+    @include media-breakpoint-up(md) {
+      padding: 0;
+    }
+
+    h1.special {
+      margin-bottom: 40px;
+    }
+
+    & > h2 {
+      margin-bottom: 15px;
+      font-family: 'Roboto';
+      font-size: 18px;
+
+      @include media-breakpoint-up(md) {
+        font-family: 'Playfair Display';
+        font-weight: normal;
+        text-align: initial;
+      }
+    }
+
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 350px;
+      margin: auto;
+
+      @include media-breakpoint-up(md) {
+        justify-content: flex-start;
+        width: 320px;
+      }
+    }
+
+    #email {
+      padding: 10px;
+      width: 350px;
+      margin-bottom: 20px;
+      border: 1px solid $brand-tertiary;
+
+      @include media-breakpoint-up(md) {
+        padding: 0 10px;
+        width: 260px;
+        margin-bottom: 10px;
+      }
+    }
+
+    button {
+      font-family: 'Roboto';
+      font-weight: normal;
+      text-transform: uppercase;
+      font-size: 12px;
+      background-color: transparent;
+      border: 1px solid $brand-primary;
+      padding: 6px 15px;
+      margin-bottom: 16px;
+
+      @include media-breakpoint-up(md) {
+        padding: 3px 10px;
+        text-align: start;
+        display: block;
+      }
+    }
+
+    .privacy-policy {
+      font-family: 'Roboto';
+      font-weight: normal;
+      font-size: 12px;
+
+      a {
+        color: $brand-primary;
+      }
+    }
+  }
+
+  .footer-social {
+    & > h1 {
+      margin-top: 40px;
+      margin-bottom: 30px;
+    }
+
+    ul {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 25px;
+
+      @include media-breakpoint-up(md) {
+        justify-content: flex-start;
+      }
+
+      a {
+        padding: 0 10px;
+        font-size: 30px;
+        color: $brand-primary;
+
+        @include media-breakpoint-up(md) {
+          padding: 15px 20px 0 0;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+.footer-menu {
+  background: $brand-tertiary;
+
+  @include media-breakpoint-up(md) {
+    background-color: $brand-secondary;
+  }
+
+  h1 {
+    color: $white;
+    padding-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .footer-menu-list {
+    display: flex;
+    justify-content: center;
+
+    @include media-breakpoint-up(md) {
+      flex-direction: row-reverse;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-right: 170px;
+
+        @include media-breakpoint-up(md) {
+          margin-right: 200px;
+        }
+      }
+
+      .footer-menu-contact-direct {
+        li:first-of-type {
+          text-align: initial;
+        }
+      }
+    }
+
+    .line {
+      background-color: white;
+      width: 1px;
+      height: auto;
+      margin: 0 35px;
+    }
+
+    a {
+      color: white;
+      font-family: 'Roboto';
+      font-size: 16px;
+      font-weight: normal;
+      text-decoration: none;
+      line-height: 40px;
+
+      @include media-breakpoint-up(md) {
+        color: $brand-primary;
+        font-family: 'Playfair Display';
+        line-height: 30px;
+      }
+    }
+  }
+
+  .footer-terms-privacy {
+    a {
+      display: block;
+      color: white;
+      font-family: 'Roboto';
+      font-size: 14px;
+      font-weight: lighter;
+      font-style: italic;
+      line-height: 20px;
+    }
+
+    :first-child {
+      margin-top: 20px;
+    }
+
+    :nth-child(2) {
+      padding-bottom: 20px;
+    }
+  }
+}
